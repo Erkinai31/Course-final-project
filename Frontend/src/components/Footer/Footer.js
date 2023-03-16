@@ -1,10 +1,12 @@
 import instagram from "../img/Vector3.svg";
 import WhatsApp from "../img/Vector2.svg";
 import './Footer.css'
+import { forwardRef } from "react";
 
-const Footer = () => {
+const Footer = forwardRef((props,ref)=> {
+  const {ContactRef} = props 
   return (
-    <div className="footer">
+    <div className="footer" ref={ContactRef}>
       <div className="footer_wrapper">
         <div className="footer_contacts">
           <h3>Contacts</h3>
@@ -32,4 +34,5 @@ const Footer = () => {
     </div>
   );
 }
+)
 export default Footer

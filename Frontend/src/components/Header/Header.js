@@ -10,22 +10,42 @@ import { useSelector } from 'react-redux';
 
 export default function Header(props) {
   const cart = useSelector(store => store.basket.basket)
-
+  const {CouponRef,StockRef,CategoryRef,ContactRef}=props
+  const handleClickCoupon = () => {
+    CouponRef.current.scrollIntoView({
+      behavior:"smooth",
+    })
+  };
+  const handleClickStock = () => {
+    StockRef.current.scrollIntoView({
+      behavior:"smooth",
+    })
+  };
+  const handleClickCategory = () => {
+    CategoryRef.current.scrollIntoView({
+      behavior:"smooth",
+    })
+  };
+  const handleClickContact = () => {
+    ContactRef.current.scrollIntoView({
+      behavior:"smooth",
+    })
+  };
 
 
   return (
       <div className='header'>
       <div className='header_wrapper'>
         <div className='logo_button'>
-          <Link to='/'><img src={logo} alt='logo' width='72' height='72'/></Link>
+          <Link to='/'><img src={logo} alt='logo' width='72' height='72' className='logo'/></Link>
         <Link to='/products/all' className='btn'>Catalog</Link>
         </div>
         <nav className='header_nav'>
           <ul className='header_nav_list'>
-            <Link to='/categories/all' className='header_nav_item'>Categories</Link>
-            <li className='header_nav_item' onClick={props.handleClick}>Coupon</li>
-            <Link to='/categories/sales'  className='header_nav_item' >Stock</Link>
-            <li className='header_nav_item'>Contacts</li>
+            <li className='header_nav_item' onClick={handleClickCategory}>Categories</li>
+            <li className='header_nav_item' onClick={handleClickCoupon}>Coupon</li>
+            <li  className='header_nav_item' onClick={handleClickStock}>Stock</li>
+            <li className='header_nav_item' onClick={handleClickContact}>Contacts</li>
           </ul>
           <div class="hamburger-menu">
 					<input id="menu__toggle" type="checkbox" />
@@ -33,10 +53,10 @@ export default function Header(props) {
 					  <span></span>
 					</label>
 					<ul class="menu__box">
-            <li class="menu__item"><Link to='/categories/all'>Categories</Link></li>
-            <li class="menu__item" onClick={props.handleClick}>Coupon</li>
-            <Link to='/categories/sales'  className="menu__item">Stock</Link>
-            <li class="menu__item">Contacts</li>
+            <li class="menu__item"  onClick={handleClickCategory}>Categories</li>
+            <li class="menu__item" onClick={handleClickCoupon}>Coupon</li>
+            <li className="menu__item" onClick={handleClickStock}>Stock</li>
+            <li class="menu__item" onClick={handleClickContact}>Contacts</li>
 					</ul>
 				  </div>
           <Link to='/basket'>

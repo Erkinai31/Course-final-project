@@ -8,7 +8,7 @@
 }
 
 .header {
-  width: 1440px;
+  width: 100%;
   font-family: "Montserrat";
   font-style: normal;
 }
@@ -147,9 +147,9 @@
 	right: -40px;
 }
 
-@media  screen and (max-width: 720px){
+@media  screen and (max-width: 1200px){
 	.header{
-		width:720px;
+		width:100%;
 	}
 	.header_nav_list{
 		display: none;
@@ -157,4 +157,14 @@
 	.menu__btn{
 		visibility: visible;
 	}
+	.btn {
+		padding: 10px;
+		font-size: 14px;
+	  }
+	.logo{
+		width: 50px;
+	}
+	.logo_button {
+		width: 350px;
+	  }
 }
