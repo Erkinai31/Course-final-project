@@ -21,8 +21,8 @@ const Stock=forwardRef((props,ref)=> {
                   <img
                     src={baseUrl + elem.image}
                     alt="photo"
-                    width="310"
-                    height="280"
+                    width="350"
+                    height="290"
                   />
                   <div className="product_price">
                     <p className="discont_price">{elem.discont_price}$</p>

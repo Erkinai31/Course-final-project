@@ -62,10 +62,10 @@ input {
 .btn_cart {
   opacity: 0;
   position: absolute;
-  width: 270px;
-  height: 70px;
-  top: 250px;
-  left: 30px;
+  width: 200px;
+  height: 60px;
+  top: 200px;
+  left: 50px;
   background: #f1fff1;
   border: 2px solid #339933;
   border-radius: 21px;

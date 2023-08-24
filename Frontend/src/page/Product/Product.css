@@ -1,7 +1,7 @@
 .one_product {
   display: flex;
   justify-content: space-around;
-  width: 1300px;
+  width: 1200px;
   height: 710px;
   align-items: center;
   margin-top: 100px;

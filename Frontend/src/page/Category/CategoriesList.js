@@ -1,8 +1,6 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchCategories } from "../../asyncAction/categories";
-import Header from "../../components/Header/Header";
-import Footer from "../../components/Footer/Footer";
 import { Link } from "react-router-dom";
 import { baseUrl } from "../..";
 
@@ -30,8 +28,8 @@ function CategoriesList() {
                 <img
                   src={baseUrl + elem.image}
                   alt="photo"
-                  width="350"
-                  height="330"
+                  width="300"
+                  height="280"
                 />
                 <p className="category_text">{elem.title}</p>
               </Link>

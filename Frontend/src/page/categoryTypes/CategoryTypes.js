@@ -50,8 +50,8 @@ export default function CategoryTypes() {
                     <img
                       src={baseUrl + elem.image}
                       alt="photo"
-                      width="318"
-                      height="330"
+                      width="300"
+                      height="280"
                     />
                     <button
                       onClick={(e) => {

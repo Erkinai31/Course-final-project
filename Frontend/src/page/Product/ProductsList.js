@@ -29,8 +29,8 @@ function ProductsList() {
                   <img
                   src={baseUrl + elem.image}
                   alt="photo"
-                  width="318"
-                  height="330"
+                  width="300"
+                  height="280"
                 />
                 <button onClick={()=> dispatch(addElemsAction(elem))} className="btn btn_cart">Add to cart</button>
                 </div>

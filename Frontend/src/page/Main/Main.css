@@ -15,7 +15,7 @@
 h1 {
   font-style: normal;
   font-weight: 700;
-  font-size: 80px;
+  font-size: 60px;
   line-height: 130%;
   color: white;
   margin-bottom: 60px;
@@ -55,7 +55,7 @@ h1 {
 }
 h3 {
   font-weight: 700;
-  font-size: 40px;
+  font-size: 30px;
   line-height: 130%;
   letter-spacing: 0.03em;
   padding-bottom: 20px;
@@ -71,11 +71,20 @@ h3 {
   width: 400px;
   align-items: center;
 }
-.category_types,
-.products, .all_categories_types {
+
+.products{
+  display:flex;
+  justify-content: space-between;
+}
+.category_types{
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 35px;
+  grid-template-columns: repeat(4, 290px);
+  gap: 20px;
+}
+.all_categories_types {
+  display: grid;
+  grid-template-columns: repeat(4, 280px);
+  gap: 30px;
   
 }
 .category_text {
@@ -105,7 +114,7 @@ h3 {
 }
 .sale_section_text p {
   font-weight: 700;
-  font-size: 90px;
+  font-size: 70px;
   line-height: 120%;
   letter-spacing: 0.03em;
   color: #ffffff;
@@ -137,13 +146,13 @@ h3 {
 }
 .sale_subtitle {
   font-weight: 700;
-  font-size: 50px;
+  font-size: 40px;
   line-height: 66%;
   letter-spacing: 0.03em;
   color: #ffffff;
 }
 .products_section {
-  padding: 50px 300px 150px 30px;
+  padding: 50px;
 }
 .product_price {
   display: flex;
@@ -190,12 +199,7 @@ img{
   border-radius:20px;
 }
 
-@media only screen and (max-width: 1439px) {
-  .category_types{
-    display: flex;
-    flex-wrap: wrap;
-  }
-}
+
 @media only screen and (max-width: 1200px) {
   .section_one{
     display: flex;

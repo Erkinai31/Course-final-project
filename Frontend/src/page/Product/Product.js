@@ -30,8 +30,8 @@ function Product() {
               <img
                 src={baseUrl + elem.image}
                 alt="photo"
-                width="710"
-                height="710"
+                width="600"
+                height="600"
               />
               </div>
               <div className='product_info'>

@@ -48,8 +48,8 @@ const Main = forwardRef((props, ref) => {
                 <img
                   src={baseUrl + elem.image}
                   alt="photo"
-                  width="310"
-                  height="280"
+                  width="290"
+                  height="250"
                 />
                 <p className="category_text">{elem.title}</p>
               </div>
